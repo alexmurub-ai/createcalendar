@@ -2767,4 +2767,24 @@ function initScratch(day){
   if(rb)rb.addEventListener('click',finish);
 }
 
-window.addEventListener('load',()=>{rsz();snowLoop();tick
+window.addEventListener('load',()=>{rsz();snowLoop();tickCd();setInterval(tickCd,1000);renderGrid()});
+window.addEventListener('resize',rsz);
+${endScript}
+</body>
+</html>`;
+    }
+
+    // =========================================================================
+    // 15. INICIALIZACIÓN DE LA APLICACIÓN
+    // =========================================================================
+    (function initStudio() {
+      const heroArt = document.getElementById('heroMockCoverArt');
+      if (heroArt) heroArt.innerHTML = COZY_SVGS[0];
+      updateLiveCountdowns();
+      setInterval(updateLiveCountdowns, 1000);
+      updateSavedCounter();
+      checkStripeReturnParam();
+    })();
+  </script>
+</body>
+</html>
